@@ -43,12 +43,12 @@ class analitica():
         if temperatura > 36:
             self.publicar("aler-temp", "*ALERTA* Los valores de Temp superan los normales")
         else:
-            self.publicar("aler-temp", "los valores de Temp estan los normales") 
+            self.publicar("aler-temp", "El valor de temperatura es normal") 
         
         if humedad > 65:
-            self.publicar("aler-hum", "*ALERTA* los valores de Hum superan los normales")
+            self.publicar("aler-hum", "*ALERTA* El porcentaje de Hum esta fuera del rango")
         else:
-            self.publicar("aler-hum", "los valores de Hum estan los normales")
+            self.publicar("aler-hum", "El porcentaje de humedad es normal")
 
     def print_data(self):
         print(self.df)
